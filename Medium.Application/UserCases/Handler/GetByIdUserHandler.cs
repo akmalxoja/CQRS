@@ -26,5 +26,5 @@ namespace Medium.Application.UseCases.MediumUser.Handler
             var user = await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == request.Id && x.IsDeleted != true);
             return user;
         }
-    }
+    } // interface bilan contactni to'g'irlen
 }
